@@ -79,7 +79,12 @@ public class Layouts {
         // 1. Create the frame (the window that will pop up)
         JFrame frame = new JFrame("BoxLayout");
         // Setting a BoxLayout is a bit more complicated
+        // Frame:
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.X_AXIS));
+
+        // panel:
+        JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
 
         // 2. Choose what happens when you click the exit button
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
